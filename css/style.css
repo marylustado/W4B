@@ -1,0 +1,214 @@
+:root{
+    --blue:#0084FF;
+    --light-blue:#B8DDFF;
+    --green:#54C788;
+    --light-green:#CAF0DB;
+    --red:#FF8A8A;
+    --light-red:#FFD2D2;
+    --yellow:#FFC166;
+    --light-yellow:#FFE7C4;
+    --purple:#9693E6;
+    --light-purple:#D5D4F5;
+    --dark:#333333
+}
+
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{margin:0;font-family:'PT Sans',sans-serif;color:var(--dark)}
+
+img{max-width:100%;display:block}
+
+a{color:inherit}
+
+button{font:inherit}
+
+.container{width:min(100% - 24px,1120px);margin-inline:auto}
+
+.site-header{height:58px;background:var(--blue);color:white;display:flex;
+    justify-content:space-between;align-items:center;padding:0 14px;position:relative}
+
+.logo{text-decoration:none;font-size:20px}
+
+.menu-button{border:0;background:transparent;cursor:pointer;padding:8px}
+
+.menu-button img{width:25px}
+
+.site-menu{position:absolute;right:8px;top:54px;z-index:10;background:var(--blue);padding:14px;border-radius:8px;box-shadow:0 5px 12px #0002}
+
+.site-menu[hidden]{display:none}
+
+.site-menu a{display:block;color:white;padding:8px 20px;text-decoration:none}
+
+.services-section{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding-block:30px 46px}
+
+.hero-card,.service-card{border-radius:12px;overflow:hidden}
+
+.hero-card{background:var(--light-blue);grid-column:1 / -1;min-height:330px;display:flex;flex-direction:column;padding:18px 18px 0}
+
+.hero-copy h1{color:var(--blue);font-size:23px;margin:0 0 12px}
+
+.hero-copy p{font-size:13px;line-height:1.5}
+
+.button{
+    display:inline-flex;align-items:center;justify-content:center;
+    border-radius:999px;padding:9px 25px;text-decoration:none;
+    font-weight:700;font-size:13px;letter-spacing:.04em
+}
+    
+.button-blue{background:var(--blue);color:white}
+
+.hero-phone{width:185px;align-self:center;margin-top:14px;max-height:200px;object-fit:contain;object-position:top}
+
+.service-card{padding:25px 12px;min-height:225px;text-align:center;display:flex;align-items:center;flex-direction:column;justify-content:center}
+
+.service-card img{height:52px;width:52px;object-fit:contain}
+
+.service-card h2{font-size:19px;margin:14px 0 9px}
+
+.service-card p{font-size:12px;line-height:1.55;margin:0}
+
+.green{background:var(--light-green)}
+
+.green h2{color:var(--green)}
+
+.pink{background:var(--light-red)}
+
+.pink h2{color:var(--red)}
+
+.yellow{background:var(--light-yellow)}
+
+.yellow h2{color:var(--yellow)}
+
+.lavender{background:var(--light-purple)}
+
+.lavender h2{color:var(--purple)}
+
+.planning-section{background:var(--purple);color:white;padding:60px 0 50px}
+
+.planning-illustration{width:100%;max-width:450px;margin:0 auto 38px}
+
+.planning-copy h2{font-size:35px;margin:0 0 20px}
+
+.planning-copy p{font-size:15px;line-height:1.8}
+
+.app-card{margin-top:32px;border-radius:25px;background:white;color:var(--dark);text-align:center;padding:24px 24px 22px}
+
+.app-card>img{width:min(100%,310px);margin:auto}
+
+.app-card h3{font-size:17px}
+
+.app-card p{font-size:14px;line-height:1.6;font-style:italic}
+
+.app-card a img{width:35px;margin:20px auto 0}
+
+.testimonials-section{text-align:center;padding-block:45px 60px}
+
+.eyebrow{font-size:12px;letter-spacing:.14em;color:#888}
+
+.testimonials-section h2{color:var(--purple);font-size:28px;margin:12px 0}
+
+.section-intro{font-size:15px;line-height:1.5;margin:0 auto 24px;max-width:650px}
+
+.testimonials-list{display:grid;gap:16px}
+
+.testimonial{border-radius:12px;padding:20px;display:grid;gap:15px;justify-items:center;text-align:center}
+
+.testimonial>img{width:105px;height:105px;object-fit:cover;border-radius:50%}
+
+.testimonial p{font-size:14px;line-height:1.55;margin:0 0 10px}
+
+.testimonial strong{font-size:13px;letter-spacing:.08em}
+
+.benefits-section{background:var(--purple);padding:46px 0 50px}
+
+.benefits-section h2{color:white;text-align:center;font-size:27px;margin:0 0 26px}
+
+.benefits-grid{display:grid;grid-template-columns:1fr;gap:12px}
+
+.benefit{background:#f5f4ff;border-radius:12px;padding:25px 20px}
+
+.benefit span{display:block;color:var(--purple);font-size:55px;font-weight:700;line-height:1}
+
+.benefit h3{color:var(--purple);font-size:17px}.benefit p{font-size:13px;line-height:1.65}
+
+.button-purple{background:var(--purple);color:white}
+
+.about-section{display:grid;gap:30px;padding-block:50px 75px}
+
+.about-copy h2{color:var(--purple);font-size:37px;margin:0 0 18px}
+
+.about-copy p{font-size:14px;line-height:1.9;margin-bottom:25px}
+
+.portrait-wrap{position:relative;width:180px}
+
+.portrait-wrap>img:first-child{width:160px;height:160px;object-fit:cover;border-radius:50%}
+
+.portrait-wrap .quote-mark{position:absolute;width:50px;right:0;top:0}
+
+.about-aside h3{font-size:22px;color:var(--purple);line-height:1.3}
+
+.about-aside .button{border-radius:5px}
+
+.about-aside .button img{height:14px;width:14px;margin-right:8px}
+
+.pricing-section{background:var(--purple);text-align:center;color:white;padding:45px 18px 35px}
+
+.pricing-section .eyebrow{color:#e3e1ff}.pricing-section h2{font-size:27px;font-weight:400;margin:10px 0}
+
+.pricing-section>strong{display:block;color:var(--yellow);font-size:56px}
+
+.pricing-section>p:not(.eyebrow){max-width:450px;margin:15px auto;font-size:14px;line-height:1.6}
+
+.button-white{background:white;color:var(--purple);min-width:170px}
+
+.pricing-section small{display:block;margin-top:20px;font-size:11px}
+
+.site-footer{background:var(--dark);color:white;text-align:center;padding:22px 16px;font-size:11px}
+
+.site-footer p{max-width:400px;margin:auto}
+
+@media(min-width:650px){
+    .container{width:min(100% - 36px,1120px)}
+    .services-section{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .hero-card{grid-column:span 2;min-height:270px;flex-direction:row;align-items:center}
+    .hero-copy{flex:1}.hero-phone{width:38%;max-height:260px;align-self:flex-end}
+    .service-card{min-height:230px}.testimonials-list{max-width:680px;margin:auto}
+    .testimonial{grid-template-columns:115px 1fr;text-align:left;justify-items:start;align-items:center}
+    .benefits-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .about-section{grid-template-columns:1.7fr 1fr;gap:40px}
+    .about-aside h3{font-size:19px}
+}
+
+@media(min-width:1000px){
+    .site-header{height:64px}
+    .services-section{gap:16px;padding-block:48px 70px}
+    .hero-card{min-height:300px}
+    .hero-copy h1{font-size:26px}
+    .hero-copy p{font-size:15px}
+    .service-card{min-height:260px;padding:26px}
+    .service-card p{font-size:14px}
+    .planning-section{padding:70px 0}
+    .planning-inner{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:end;max-width:750px}
+    .planning-copy h2{font-size:30px}
+    .planning-copy p{font-size:14px}
+    .app-card{margin:0}
+    .testimonials-section{padding-block:55px 70px}
+    .benefits-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .benefit{min-height:270px}
+    .about-section{padding-block:70px 130px}
+    .pricing-section{padding-block:55px}
+}
+
+/* for mobile */
+@media (min-width: 1000px) {
+  .services-section { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .planning-inner { max-width: 760px; }
+  .testimonials-list { max-width: 650px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+ 
